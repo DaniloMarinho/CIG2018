@@ -15,7 +15,10 @@ public class Movimento : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        Vector3 direcao = new Vector3(1, 0, 0);
+
+        Vector3 direcao = new Vector3(1, 0, 0.2f);
+
+        //transform.rotation += Quaternion.Euler(0, 15, 0);
 
         GameObject referencia = GameObject.Find("Sphere");
 
@@ -23,6 +26,6 @@ public class Movimento : MonoBehaviour {
         if (this.transform.position.z - referencia.transform.position.z < 10)
         GetComponent<Rigidbody>().velocity = velocidade * direcao;
 
-        //if(Time.timeSinceLevelLoad % 1 < 1 && Time.timeSinceLevelLoad % 3 > 0.9) Destroy(this.gameObject);
+        if(GameObject.Find("Sphere").transform.position.z - this.transform.position.z > 5) Destroy(this.gameObject);
     }
 }
