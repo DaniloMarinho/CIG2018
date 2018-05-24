@@ -32,7 +32,7 @@ public class PlayerController : MonoBehaviour {
             //if (GetComponent<Rigidbody>().velocity.x == 0)
             //{
                 GetComponent<Rigidbody>().velocity = speed * dir + nulo;
-                transform.rotation = Quaternion.Euler(0, 15, 0);
+                //transform.rotation = Quaternion.Euler(0, 15, 0);
             //}
             //else GetComponent<Rigidbody>().velocity = speed * nulo;
         }
@@ -42,7 +42,7 @@ public class PlayerController : MonoBehaviour {
             //if (GetComponent<Rigidbody>().velocity.x == 0)
             //{
                 GetComponent<Rigidbody>().velocity = -speed * dir + nulo;
-            transform.rotation = Quaternion.Euler(0, -15, 0);
+                //transform.rotation = Quaternion.Euler(0, -15, 0);
             //}
             //else GetComponent<Rigidbody>().velocity = speed * nulo;
         }
