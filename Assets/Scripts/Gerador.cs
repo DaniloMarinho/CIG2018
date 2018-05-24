@@ -51,9 +51,9 @@ public class Gerador : MonoBehaviour {
             //for (int i = -2; i <= 2; i++)
             //{
             float d = Random.value;
-                Vector3 pos1 = new Vector3(-4 + 0.5f*d, -0.35f, this.transform.position.z + 15);
-                Vector3 pos2 = new Vector3(4 - 0.5f * d, -0.35f, this.transform.position.z + 15);
-                Vector3 pos3 = new Vector3(8*(0.5f-d), -0.35f, this.transform.position.z + 15);
+                Vector3 pos1 = new Vector3(-4 + 0.5f*d, -0.35f, this.transform.position.z + 10);
+                Vector3 pos2 = new Vector3(4 - 0.5f * d, -0.35f, this.transform.position.z + 10);
+                Vector3 pos3 = new Vector3(8*(0.5f-d), -0.35f, this.transform.position.z + 10);
                 //Vector3 pos4 = new Vector3(2.7f, -0.35f, this.transform.position.z + 7);
                 //Vector3 pos5 = new Vector3(-2.7f, -0.35f, this.transform.position.z + 7);
             float x = 10*Random.value;
